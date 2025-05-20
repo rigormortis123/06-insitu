@@ -1,0 +1,51 @@
+.event-title {
+  font-size: 140;
+}
+.event-title div {
+  border-bottom: 4px solid black;
+}
+.event-date {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 48px;
+  margin-bottom: -30px;
+}
+.event-lieu {
+  font-size: 40px;
+  text-decoration: underline;
+}
+
+.event-bottom {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.event-canton {
+  gap: 15px;
+  display: flex;
+  font-size: 40px;
+}
+
+.event-canton img {
+  margin-top: 5px;
+  height: 45px;
+}
+
+.event-filter {
+  font-size: 30px;
+  text-decoration: underline 2px;
+  padding: 8px 20px 2px;
+  border: 2px solid black;
+  border-radius: 40px;
+
+  &.orange {
+    background-color: var(--orange);
+  }
+  &.green {
+    background-color: var(--green);
+  }
+  &.pink {
+    background-color: var(--pink);
+  }
+}

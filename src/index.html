@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>eikon parcel starter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="scss/main.scss" />
+  </head>
+  <event-body>
+    <div class="screen">
+      <img class="icon-interact" src="./img/click.svg" />
+
+      <div class="circle-wrapper">
+        <div class="circle pink"></div>
+        <div class="circle orange"></div>
+        <div class="circle green"></div>
+      </div>
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="z-index: -2" data-color="orange">
+            <h2 class="event-title">
+              <div>
+                Passeport
+                <p class="event-date">15.04.2025</p>
+              </div>
+            </h2>
+            <p class="event-lieu">Théâtre Équilibre</p>
+
+            <div class="event-bottom">
+              <div class="event-canton">
+                <img src="./img/canton.svg" />
+                <p>Fribourg</p>
+              </div>
+
+              <div class="event-filter orange">
+                <p>transdisciplinaire</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide" style="z-index: -2" data-color="pink">
+            <h2 class="event-title">
+              <div>
+                Étienne Francey La vibration des jours
+                <p class="event-date">20.09.2024 - 22.06.2025</p>
+              </div>
+            </h2>
+            <p class="event-lieu">
+              Espace Jean Tinguely - Niki de Saint Phalle
+            </p>
+
+            <div class="event-bottom">
+              <div class="event-canton">
+                <img src="./img/canton.svg" />
+                <p>Fribourg</p>
+              </div>
+
+              <div class="event-filter pink">
+                <p>art visuels & design</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide" style="z-index: -2" data-color="green">
+            <h2 class="event-title">
+              <div>
+                King Pepe
+                <p class="event-date">05.04.2025</p>
+              </div>
+            </h2>
+            <p class="event-lieu">Schloss Uberstorf</p>
+
+            <div class="event-bottom">
+              <div class="event-canton">
+                <img src="./img/canton.svg" />
+                <p>Ueberstorf</p>
+              </div>
+
+              <div class="event-filter green">
+                <p>projection</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+
+      <div class="language-container">
+        <div class="language-wrapper">
+          <p class="language french">FR</p>
+          <p class="language deutsch">DE</p>
+          <p class="language english">EN</p>
+        </div>
+
+        <div class="language-selection"></div>
+      </div>
+      <img src="./img/logo.svg" class="logo" />
+    </div>
+    <script src="js/main.js" type="module"></script>
+  </event-body>
+</html>

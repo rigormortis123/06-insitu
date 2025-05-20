@@ -1,0 +1,78 @@
+:root {
+  --pink: #ffaaff;
+  --green: #75fb70;
+  --orange: #ff4d00;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+img,
+video {
+  display: block;
+}
+
+hr {
+  border: black 3px solid;
+}
+
+p {
+  font-family: "suisse intl", sans-serif;
+}
+
+h2 {
+  line-height: 78%;
+  font-family: "calvino grande", serif;
+}
+
+body {
+  background: var(--orange);
+}
+
+.screen {
+  position: relative;
+  width: 1080px;
+  height: 1920px;
+  margin: 0 auto;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.logo {
+  z-index: 2;
+  left: 40px;
+  bottom: 50px;
+  position: absolute;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.icon-interact {
+  position: absolute;
+  bottom: 500px;
+  animation: blink 2600ms infinite ease-out;
+}

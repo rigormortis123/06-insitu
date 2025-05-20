@@ -1,0 +1,32 @@
+.circle {
+  margin: auto;
+  position: absolute;
+  pointer-events: none;
+  height: 1000px;
+  width: 1000px;
+  border-radius: 50%;
+  background: red;
+  transform: scale(0);
+  filter: blur(20);
+  &.green {
+    background: var(--green);
+  }
+  &.pink {
+    background: var(--pink);
+  }
+  &.orange {
+    background: var(--orange);
+  }
+}
+
+.circle.is-active {
+  transform: scale(3);
+  transition: all 3600ms ease-in-out;
+}
+
+.circle-wrapper {
+  margin-top: -200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
